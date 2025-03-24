@@ -1,7 +1,7 @@
-class RijecScramble {
+﻿class RijecScramble {
     constructor(ml) {
         this.ml = ml
-        this.chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        this.chars = '0123456789'
         this.update = this.update.bind(this)
     }
     setText(novText) {
@@ -57,7 +57,7 @@ class RijecScramble {
 // ——————————————————————————————————————————————————
 
 const rijeci = [
-    ' Web Developer'
+    ' Software Developer'
 ]
 
 const ml = document.querySelector('.randomtext')
@@ -76,7 +76,7 @@ drugo()
 class textScramble {
     constructor(kl) {
         this.kl = kl
-        this.chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        this.chars = '1234567890'
         this.update = this.update.bind(this)
     }
     setText(NewText) {
@@ -151,7 +151,7 @@ sljedece()
 class TextScramble {
     constructor(el) {
         this.el = el
-        this.chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        this.chars = '1234567890'
         this.update = this.update.bind(this)
     }
     setText(newText) {
@@ -207,7 +207,7 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-    'Name: Ahmed Huseinspahic',
+    'Name: Ahmed Huseinspahić',
 ]
 
 const el = document.querySelector('.nametext')

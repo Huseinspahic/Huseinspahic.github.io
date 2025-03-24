@@ -1,5 +1,5 @@
-$(window).on("scroll", function () {
-    if ($(window).scrollTop() > 100) {
+﻿$(window).on("scroll", function () {
+    if ($(window).scrollTop() > 0) {
         $("#Introduction").addClass("dim"),
             $("#Introduction").removeClass("undim");
         $("#Introduction").addClass("lax"),
@@ -9,11 +9,11 @@ $(window).on("scroll", function () {
             $("#Introduction").addClass("undim");
         $("#Introduction").removeClass("lax"),
             $("#Introduction").addClass("unlax");
-    }
+    } 
 });
 
 $(window).on("scroll", function () {
-    if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 0) {
         $("#Container").addClass("lax"),
             $("#Container").removeClass("unlax");
     } else if ($(window).scrollTop() == 0) {
