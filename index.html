@@ -1,1 +1,126 @@
-Front Page
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+
+    <title>Ahmed Huseinspahic</title>
+</head>
+<body>
+    <section id="Introduction" class="thisSection introduction undim">
+        <div id="fading" class="nametext"></div>
+        <div class="occupation">
+            <div class="occupationtext occupation-child"></div>
+            <div class="randomtext occupation-child">
+                <div class="header">
+                    <p>Ahmed Huseinspahic</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div id="Container" class="container unlax">
+        <div class="header"></div>
+        <div class="title">
+            <h1 class="titleSection first">Projects /></h1>
+            <div id="myBtnContainer">
+                <button class="btn" onclick="filterSelection('none')">none</button>
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('E-commerce')"> E-commerce</button>
+                <button class="btn" onclick="filterSelection('php')"> php</button>
+                <button class="btn" onclick="filterSelection('ReactApp')"> ReactApp</button>
+                <button class="btn" onclick="filterSelection('Games')"> Games</button>
+            </div>
+            <div class="gridContainer">
+                <div class="filterDiv E-commerce php titleImage">
+                    <div class="softwareIcons"><img class="Software" src="images/wordpress-icon.png" /><img class="Software" src="images/php-icon.png" /><img class="Software" src="images/cpanel-icon.png" /><img class="Software" src="images/stripe-icon.png" /></div>
+                    <div class="right"><h3>zbga.org</h3></div>
+                    <img class="thmbnl-image" src="images/zbga.org image.PNG" />
+                    <a href="https://zbga.org/">
+                        <div class="overlay">
+                            <div class="text">Community of Bosniaks GA Website.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv E-commerce titleImage">
+                    <div class="softwareIcons"><img class="Software" src="images/wordpress-icon.png" /><img class="Software" src="images/cpanel-icon.png" /></div>
+                    <div class="right"><h3>milkyknots.com</h3></div>
+                    <img class="thmbnl-image" src="images/milkyknots.PNG" />
+                    <a href="https://milkyknots.com/">
+                        <div class="overlay">
+                            <div class="text">Milky Knots.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv E-commerce titleImage">
+                    <div class="softwareIcons"><img class="Software" src="images/wordpress-icon.png" /><img class="Software" src="images/blender-icon.ico" /><img class="Software" src="images/woocommerce-icon.png" /></div>
+                    <div class="right"><h3>bosnianpine.com</h3></div>
+                    <img class="thmbnl-image" src="images/BosnianPine-image.PNG" />
+                    <a href="https://bosnianpine.com/">
+                        <div class="overlay">
+                            <div class="text">Bosnian Pine.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv ReactApp titleImage">
+                    <div class="softwareIcons"><img class="Software" src="images/react-icon - Copy.png" /><img class="Software" src="images/ruby-icon.png" /><img class="Software" src="images/stripe-icon.png" /><img class="Software" src="images/github-icon - Copy.png" /></div>
+                    <div class="right"><h3>Card Reader React App</h3></div>
+                    <img class="thmbnl-image" src="images/secured backend cart.PNG" />
+                    <a href="#">
+                        <div class="overlay">
+                            <div class="text">React Card Reader</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="filterDiv Games titleImage gamesimage">
+                    <div class="softwareIcons"><img class="Software" src="images/unity-icon.png" /><img class="Software" src="images/csharp-icon.png" /></div>
+                    <div class="right"><h3>Color Changing Block Mobile Game</h3></div>
+                    <img class="thmbnl-image" src="images/colorBlocksGame.png" />
+                    <a href="https://appetize.io/app/g0zd9qx5qkarmch4cqz25twv3m">
+                        <div class="overlay">
+                            <div class="text">ColorBlocks Game</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <h2 class="titleSection">About me /></h2>
+            <div class="section">
+                <div class="left">
+                    <h3>Coding Languages</h3>
+                    <p>JAVA, C#, JavaScript, Python, SQL, HTML/CSS</p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="left">
+                    <h3>Software/Framework</h3>
+                    <p>Eclipse, Spring Boot, Visual Code, pyCharm, React, Git, cPanel</p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="left">
+                    <h3>Other Software</h3>
+                    <p>Unity, Blender, Adobe Photoshop, Adobe illustrator, Adobe After Effects</p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="left">
+                    <h3>Languages</h3>
+                    <p>English - Native Proficiency, Bosnian (Serbo-Croatian) - Native Proficiency</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="scripts/FilterScript.js"></script>
+        <script src="scripts/WordScramblerRandom.js"></script>
+        <script src="scripts/onScroll.js"></script>
+</body>
+</html>
