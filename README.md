@@ -1,3 +1,3 @@
 - 👋 Hi, I’m Ahmed Huseinspahic
 - 📫 How to reach me https://www.linkedin.com/in/the-developer/
-- 🌎 My website https://www.ahmedhus.com/
+- 🌎 My website https://www.huseinspahic.com/
