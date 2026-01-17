@@ -480,7 +480,11 @@ h4 {
   color: #23272a;
 }
 
-/* Responsive adjustments for mobile devices */
+/* ===============================
+   Mobile View Font Size Fix
+   ===============================
+   Add this block at the END of Style.css
+   ============================== */
 @media screen and (max-width: 600px) {
   body,
   .resume-box,
@@ -491,7 +495,7 @@ h4 {
   .other-projects,
   .experience-categories,
   h1, h2, h3, h4, p, li, .project-title {
-    font-size: 16px !important; /* Increase base font size */
+    font-size: 17px !important;
     line-height: 1.7 !important;
   }
 
@@ -501,23 +505,29 @@ h4 {
   .key-expertise,
   .footer-summary,
   .other-projects {
-    padding: 12px 8px !important; /* Reduce side-padding for more space */
+    padding: 14px 6px !important;
     max-width: 98vw !important;
   }
 
   .experience-categories ul {
-    font-size: 15px !important;
+    font-size: 16px !important;
   }
+
   .other-projects .collapsible {
-    font-size: 15px !important;
-    padding: 12px !important;
-    gap: 8px !important;
+    font-size: 16px !important;
+    padding: 10px !important;
+    gap: 7px !important;
   }
+
   .carousel-image {
     max-width: 98vw !important;
   }
-}
 
+  .project-thumb {
+    width: 32px !important;
+    height: 32px !important;
+  }
+}
 
 
 
