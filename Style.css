@@ -501,7 +501,7 @@ h4 {
     overflow-x: hidden !important;
   }
   /* BIG intro name and occupation text */
-  .nametext, .occupationtext, .randomtext {
+  body .nametext, body .occupationtext, body .randomtext {
     font-size: 48px !important;
     font-weight: 700 !important;
     line-height: 1.13 !important;
@@ -570,6 +570,7 @@ h4 {
     height: 36px !important;
   }
 }
+
 
 
 
