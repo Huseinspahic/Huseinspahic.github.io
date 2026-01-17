@@ -508,6 +508,19 @@ h4 {
     color: #23272a;
 }
 
+/* Add to your stylesheet or keep at end for specificity */
+.other-projects iframe {
+  width: 100%;
+  height: 600px;
+  min-width: 180px;
+  max-width: 100%;
+  border: 0;
+  border-radius: 12px;
+  background: #151b21;
+  display: block;
+  margin: 0 auto 18px auto;
+}
+
 /* ========== MOBILE OVERRIDES ========== */
 @media screen and (max-width: 600px) {
     body, html {
@@ -593,4 +606,12 @@ h4 {
         width: 36px !important;
         height: 36px !important;
     }
+    
+    .other-projects iframe {
+    height: 62vw; /* for mobile responsiveness, stays tall */
+    min-height: 280px;
+    max-height: 72vw;
+  }
 }
+}
+
