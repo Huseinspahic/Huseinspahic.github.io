@@ -481,10 +481,8 @@ h4 {
 }
 
 /* ===============================
-   Mobile View Font Size Fix
-   ===============================
-   Add this block at the END of Style.css
-   ============================== */
+   Mobile-Friendly Large Text Fix
+   =============================== */
 @media screen and (max-width: 600px) {
   body,
   .resume-box,
@@ -495,28 +493,39 @@ h4 {
   .other-projects,
   .experience-categories,
   h1, h2, h3, h4, p, li, .project-title {
-    font-size: 50px !important;
-    line-height: 1.7 !important;
+    font-size: 22px !important;
+    line-height: 1.6 !important;
   }
 
+  /* Extra large headings/text for intro highlight */
+  .nametext, .occupationtext, .randomtext {
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    line-height: 1.15 !important;
+  }
+
+  /* Resume box inner elements large too */
   .resume-box,
   .hero-summary,
   .professional-summary,
   .key-expertise,
   .footer-summary,
-  .other-projects {
-    padding: 14px 6px !important;
+  .other-projects,
+  .experience-categories {
+    font-size: 22px !important;
+    padding: 18px 5px !important;
     max-width: 98vw !important;
   }
 
-  .experience-categories ul {
-    font-size: 45px !important;
+  .experience-categories ul,
+  .resume-box ul {
+    font-size: 21px !important;
   }
 
   .other-projects .collapsible {
-    font-size: 45px !important;
-    padding: 10px !important;
-    gap: 7px !important;
+    font-size: 22px !important;
+    padding: 14px !important;
+    gap: 9px !important;
   }
 
   .carousel-image {
@@ -524,11 +533,7 @@ h4 {
   }
 
   .project-thumb {
-    width: 32px !important;
-    height: 32px !important;
+    width: 36px !important;
+    height: 36px !important;
   }
 }
-
-
-
-
