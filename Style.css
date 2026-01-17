@@ -385,3 +385,59 @@ h4 {
     to { opacity: 0; }
 }
 
+.other-projects {
+    margin-top: 36px;
+}
+.other-projects h2 {
+    margin-bottom: 18px;
+}
+.other-projects .project {
+    margin-bottom: 22px;
+}
+.other-projects .collapsible {
+    background: #23272a;
+    color: #F0F4F8;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 17px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 7px;
+    transition: background 0.2s;
+}
+.other-projects .collapsible:hover,
+.other-projects .collapsible.active {
+    background: #30363d;
+}
+.project-thumb {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);
+}
+.project-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #F0F4F8;
+}
+.other-projects .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s;
+    background: #191c1e;
+    margin-bottom: 0px;
+    border-radius: 0 0 6px 6px;
+    color: #F0F4F8;
+}
+.other-projects .collapsible.active + .content {
+    padding: 14px 18px;
+}
+
+
