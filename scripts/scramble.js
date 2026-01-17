@@ -14,8 +14,8 @@ class TextScramble {
         for (let i = 0; i < length; i++) {
             const from = oldText[i] || ''
             const to = newText[i] || ''
-            const start = Math.floor(Math.random() * 40)
-            const end = start + Math.floor(Math.random() * 40)
+            const start = Math.floor(Math.random() * 25)
+            const end = start + Math.floor(Math.random() * 25)
             this.queue.push({ from, to, start, end })
         }
 
@@ -36,7 +36,7 @@ class TextScramble {
                 complete++
                 output += to
             } else if (this.frame >= start) {
-                if (!char || Math.random() < 0.28) {
+                if (!char || Math.random() < 0.18) {
                     char = this.randomChar()
                     this.queue[i].char = char
                 }
@@ -46,7 +46,7 @@ class TextScramble {
             }
         }
 
-        this.el.innerHTML = output
+        this.el.innerHTML = output + `<span class="cursor">▌</span>`
 
         if (complete === this.queue.length) {
             this.resolve()
@@ -61,31 +61,50 @@ class TextScramble {
     }
 }
 
-/* ============================
-   DATA
-============================ */
-
-const occupationText = ['Occupation:']
-const roles = ['ServiceNow Technical Architect', 'Enterprise Platform Architect']
-const nameText = ['Name: Ahmed Huseinspahić']
-
-/* ============================
+/* =========================
    INIT
-============================ */
+========================= */
 
 const occupationEl = document.querySelector('.occupationtext')
 const roleEl = document.querySelector('.randomtext')
 const nameEl = document.querySelector('.nametext')
+const intro = document.getElementById('Introduction')
+const container = document.getElementById('Container')
 
-const occupationScramble = new TextScramble(occupationEl)
-const roleScramble = new TextScramble(roleEl)
-const nameScramble = new TextScramble(nameEl)
+const occupation = new TextScramble(occupationEl)
+const role = new TextScramble(roleEl)
+const name = new TextScramble(nameEl)
 
-occupationScramble.setText(occupationText[0])
-nameScramble.setText(nameText[0])
+occupation.setText('Occupation:')
+
+const roles = [
+    'ServiceNow Technical Architect',
+    'Enterprise Platform Architect',
+    'DevOps & Automation Specialist'
+]
 
 let index = 0
-setInterval(() => {
-    roleScramble.setText(roles[index])
+
+const cycleRoles = () => {
+    role.setText(roles[index]).then(() => {
+        setTimeout(cycleRoles, 2600)
+    })
     index = (index + 1) % roles.length
-}, 3000)
+}
+
+setTimeout(() => {
+    cycleRoles()
+}, 400)
+
+setTimeout(() => {
+    name.setText('Ahmed Huseinspahić')
+}, 1800)
+
+/* =========================
+   TRANSITION INTO RESUME
+========================= */
+
+setTimeout(() => {
+    intro.classList.add('lax', 'dim')
+    container.classList.add('lax')
+}, 5500)
