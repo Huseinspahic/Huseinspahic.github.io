@@ -507,9 +507,15 @@ h4 {
     }
     
     /* IMPORTANT: These must override the desktop 20px font-size */
-    .nametext,
-    .occupationtext,
-    .randomtext {
+    body .nametext,
+    body .occupationtext,
+    body .randomtext,
+    .introduction .nametext,
+    .introduction .occupationtext,
+    .introduction .randomtext,
+    div.nametext,
+    div.occupationtext,
+    div.randomtext {
         font-size: 48px !important;
         font-weight: 700 !important;
         line-height: 1.13 !important;
