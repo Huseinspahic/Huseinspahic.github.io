@@ -480,5 +480,44 @@ h4 {
   color: #23272a;
 }
 
+/* Responsive adjustments for mobile devices */
+@media screen and (max-width: 600px) {
+  body,
+  .resume-box,
+  .hero-summary,
+  .professional-summary,
+  .key-expertise,
+  .footer-summary,
+  .other-projects,
+  .experience-categories,
+  h1, h2, h3, h4, p, li, .project-title {
+    font-size: 16px !important; /* Increase base font size */
+    line-height: 1.7 !important;
+  }
+
+  .resume-box,
+  .hero-summary,
+  .professional-summary,
+  .key-expertise,
+  .footer-summary,
+  .other-projects {
+    padding: 12px 8px !important; /* Reduce side-padding for more space */
+    max-width: 98vw !important;
+  }
+
+  .experience-categories ul {
+    font-size: 15px !important;
+  }
+  .other-projects .collapsible {
+    font-size: 15px !important;
+    padding: 12px !important;
+    gap: 8px !important;
+  }
+  .carousel-image {
+    max-width: 98vw !important;
+  }
+}
+
+
 
 
