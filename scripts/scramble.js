@@ -46,8 +46,11 @@ class TextScramble {
             }
         }
 
-        this.el.innerHTML = output + `<span class="cursor">▌</span>`
-
+        const showCursor = this.el.classList.contains('randomtext');
+this.el.innerHTML = showCursor
+  ? output + `<span class="cursor">▌</span>`
+  : output;
+        
         if (complete === this.queue.length) {
             this.resolve()
         } else {
