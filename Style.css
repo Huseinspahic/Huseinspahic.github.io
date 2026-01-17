@@ -1,310 +1,154 @@
 body {
-     background-color: #1A1A1A;
+    background-color: #1A1A1A;
 }
- div {
-     font-family: 'Roboto Slab';
+div {
+    font-family: 'Roboto Slab'; /* global fallback, overridden below for resume sections */
 }
-.introduction {
-    text-align: center;
-    position: relative;
-}
- h2, h1 {
-     font-size: 25px;
-}
- h3 {
-     font-size: 15px;
-     color: #1d2124;
-}
- .workDate {
-     float: inline-end;
-}
- .workName {
-     float: left;
-}
- h4 {
-     font-size: 15px;
-}
- p {
-     font-size: 12px;
-}
- .occupation-child {
-     display: inline-block;
-}
- .nametext, .occupationtext {
-     font-weight: 700;
-}
- .nametext, .occupationtext, .randomtext {
-     font-size: 20px;
-     color: #F0F4F8;
-}
+
+/* ====== Center Introduction Content with Flexbox ====== */
 .thisSection {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
- #Introduction.dim {
-     -webkit-animation: fadeout 0.6s linear 1 normal forwards;
+
+.introduction {
+    text-align: center;
+    position: relative;
+    /* Remove top/transform for static centering */
 }
- @-webkit-keyframes fadeout {
-     from {
-        opacity: 1;
-    }
-     to {
-        opacity: 0;
-    }
+
+/* ====== Headings ====== */
+h2, h1 {
+    font-size: 25px;
 }
- #Introduction.undim {
-     -webkit-animation: fadein 0.4s linear 1 normal forwards;
+h3 {
+    font-size: 15px;
+    color: #1d2124;
 }
- @-webkit-keyframes fadein {
-     from {
-         opacity: 0;
-    }
-     to {
-         opacity: 1;
-    }
+h4 {
+    font-size: 15px;
 }
- .container {
-     background: #ecf0f1;
-     margin: 0px auto 0px;
-     box-shadow: 0px 5px 5px #1f2021;
-     border-radius: 3px;
-     padding: 15px 40px 40px 40px;
-     margin-top: 50px;
+.title {
+    text-align: center;
 }
- p {
-     color: black;
+.titleSection.first {}
+
+.workDate {
+    float: inline-end;
 }
- .row {
-     text-align: center;
+.workName {
+    float: left;
 }
- #Container.lax {
-     -webkit-animation: translateY 0.4s linear 1 normal forwards;
+
+.row {
+    text-align: center;
 }
- #Container.unlax {
-     -webkit-animation: translateout 0.4s linear 1 normal forwards;
+
+/* ====== Animated Introduction and Resume Sections ====== */
+.nametext, .occupationtext {
+    font-weight: 700;
 }
- #Container.erase {
-     -webkit-animation: dissappear 0.4s linear 1 normal forwards;
+.nametext, .occupationtext, .randomtext {
+    font-size: 20px;
+    color: #F0F4F8;
 }
- #Introduction.lax {
-     -webkit-animation: translateY 0.9s linear 1 normal forwards;
+.occupation-child {
+    display: inline-block;
 }
- #Introduction.unlax {
-     -webkit-animation: translateout 0.9s linear 1 normal forwards;
-}
- /*@-webkit-keyframes translateY {
-    from { transform: translateY(0); }
-    to { transform: translateY(-120px); }
-}*/
-}
- @-webkit-keyframes dissappear {
-     from {
-         transform: translateY(-80px) 
-    }
-     to {
-         transform: translateY(-160vh) 
-    }
-     from {
-         opacity: 1;
-    }
-     to {
-         opacity: 0;
-    }
-}
- .title {
-     text-align: center;
-}
- .titleSection.first {
-}
- .thmbnl-image {
-     position: relative;
-     width: 100%;
-     overflow: hidden;
-}
- .overlay {
-     position: absolute;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     height: 100%;
-     width: 100%;
-     opacity: 0;
-     transition: .5s ease;
-     backdrop-filter: blur(3px);
-}
- .titleImage {
-     position: relative;
-     border: solid 1px;
-     margin-bottom: 20px;
-     box-shadow: 0px 3px 20px 0px black;
-}
- .titleImage.gamesimage {
-     box-shadow: 0px 3px 20px 0px #f500ff;
-}
- .titleImage:hover .overlay{
-     opacity: 1;
-}
- .Software {
-     width: 30px;
-     padding-right: 10px;
-}
- .softwareIcons {
-     position: absolute;
-     top: -30px;
-}
- .text {
-     color: white;
-     font-size: 20px;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     -webkit-transform: translate(-50%, -50%);
-     -ms-transform: translate(-50%, -50%);
-     transform: translate(-50%, -50%);
-     text-align: center;
-}
- .gridContainer {
-     display: grid;
-     grid-gap: 40px;
-     grid-template-columns: repeat(auto-fit, 380px);
-     grid-template-rows: repeat(2, auto-fit);
-     place-content: center;
-}
- .inPosition {
-     transform: translateY(-80px) 
-}
- .left {
-     text-align: left;
-}
- .right {
-     text-align: right;
-     position: absolute;
-     top: -25px;
-     right: 0px;
-}
- #myBtnContainer {
-     padding-bottom: 8%;
-}
- .filterDiv {
-     display: none;
-}
- .show {
-     display: block;
-}
- .container {
-     margin-top: 20px;
-     overflow: hidden;
-}
-/* Style the buttons */
- .btn {
-     border: none;
-     outline: none;
-     padding: 12px 16px;
-     background-color: #00000013;
-     cursor: pointer;
-}
- .btn:hover {
-     background-color: #007bff40;
-}
- .btn.active {
-     background-color: #666;
-     color: white;
-}
- .collapsible {
-     background-color: #1A1A1A;
-     cursor: pointer;
-     padding: 18px;
-     width: 100%;
-     border: none;
-     text-align: left;
-     outline: none;
-     font-size: 15px;
-}
- .active, .collapsible:hover {
-     background-color: #1A1A1A;
-}
- .content {
-     padding: 0 18px;
-     max-height: 0;
-     overflow: hidden;
-     transition: max-height 0.2s ease-out;
-}
-.resume-box, .resumeName, .experience-categories, .professional-summary, .hero-summary, .key-expertise, .footer-summary {
+
+/* ====== Resume, Cards, Summaries, and Highlights ====== */
+.resume-box,
+.resumeName,
+.experience-categories,
+.professional-summary,
+.hero-summary,
+.key-expertise,
+.footer-summary {
     font-family: 'Roboto', 'Roboto Slab', Arial, sans-serif !important;
 }
- .resume-box {
-     background: linear-gradient(to bottom, #121212, #1A1A1A);
-     /*padding: 30px;*/
-     border-radius: 12px;
-     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-     max-width: 800px;
-     margin: 12px auto;
-     text-align: left;
-     line-height: 1.6;
-}
- .resume-box h2 {
-     color: #F0F4F8;
-     border-bottom: 2px solid #3A3F5C;
-     padding-bottom: 5px;
-}
- .resume-box ul {
-     list-style-type: none;
-     padding: 0;
-}
- .resume-box li {
-     padding: 10px;
-     margin: 5px 0;
-     border-radius: 6px;
-}
- .resume-box h1, p, li, h3 {
-     color: #F0F4F8;
-}
- .resumeName {
-     text-align: center;
-}
- .workExperience {
-     border-radius: 4px;
-     width: 50px;
-     float: right;
+
+.hero-summary, .professional-summary, .key-expertise {
+    background: linear-gradient(to right, #16181b 70%, #20252c);
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(30,40,50,0.14);
+    max-width: 800px;
+    margin: 12px auto;
+    padding: 24px 30px;
+    line-height: 1.6;
+    text-align: left;
 }
 
+.resume-box {
+    background: linear-gradient(to bottom, #121212, #1A1A1A);
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin: 12px auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.resumeName {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.resume-box h2 {
+    color: #F0F4F8;
+    border-bottom: 2px solid #3A3F5C;
+    padding-bottom: 5px;
+}
+.resume-box h1, p, li, h3 {
+    color: #F0F4F8;
+}
+
+/* ====== Experience Categories + Highlights ====== */
 .experience-categories {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 .experience-categories > li {
-  margin-bottom: 18px;
+    margin-bottom: 18px;
 }
+.experience-categories b,
 .experience-categories strong {
-  color: #72bcd4;
-  font-size: 15px;
-  display: block;
-  margin-bottom: 5px;
+    color: #66c2fd;
+    font-weight: 500;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 5px;
 }
 .experience-categories ul {
-  margin-bottom: 6px;
-  margin-top: 3px;
+    margin-top: 4px;
+    margin-left: 24px;
+    font-size: 14px;
+    color: #F0F4F8;
 }
- .thumbnail {
-     width: 100%;
-}
-
-/* Cursor */
-.cursor {
-    animation: blink 1s infinite;
-    margin-left: 4px;
-}
-
-@keyframes blink {
-    0%, 50%, 100% { opacity: 1; }
-    25%, 75% { opacity: 0; }
+.experience-categories span {
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 2px;
 }
 
-/* Scroll hint */
+/* ====== Footer Summary ====== */
+.footer-summary {
+    font-size: 14px;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    text-align: center;
+    margin-top: 16px;
+    padding: 0;
+    color: #9aa0a6;
+}
+
+/* ====== Scroll Hint & Animation ====== */
 .scroll-hint {
     position: fixed;
     left: 50%;
@@ -324,30 +168,208 @@ body {
     opacity: 0;
     pointer-events: none;
 }
-
 .scroll-arrow {
     display: block;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1;
-    margin: 0 auto 4px auto; /* space between arrow and text */
+    margin: 0 auto 4px auto;
     opacity: 0.9;
     animation: float 2s ease-in-out infinite;
 }
-
 @keyframes float {
     0% { transform: translateY(0); }
     50% { transform: translateY(6px); }
     100% { transform: translateY(0); }
 }
 
+/* ====== Miscellaneous/Legacy Styles (unchanged, but cleaned) ====== */
+.thumbnail {
+    width: 100%;
+}
 
+.container {
+    background: #ecf0f1;
+    margin: 0px auto 0px;
+    box-shadow: 0px 5px 5px #1f2021;
+    border-radius: 3px;
+    padding: 15px 40px 40px 40px;
+    margin-top: 50px;
+}
 
+.gridContainer {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, 380px);
+    grid-template-rows: repeat(2, auto-fit);
+    place-content: center;
+}
 
+.inPosition {
+    transform: translateY(-80px);
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+    position: absolute;
+    top: -25px;
+    right: 0px;
+}
 
+/* Collapsible Buttons & Content */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #00000013;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #007bff40;
+}
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+.collapsible {
+    background-color: #1A1A1A;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.active, .collapsible:hover {
+    background-color: #1A1A1A;
+}
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 
+/* Work Experience */
+.workExperience {
+    border-radius: 4px;
+    width: 50px;
+    float: right;
+}
 
+/* Cursor animation for text (if used) */
+.cursor {
+    animation: blink 1s infinite;
+    margin-left: 4px;
+}
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
 
+/* Overlays and Thumbnails for images, etc. */
+.thmbnl-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    backdrop-filter: blur(3px);
+}
+.titleImage {
+    position: relative;
+    border: solid 1px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 20px 0px black;
+}
+.titleImage.gamesimage {
+    box-shadow: 0px 3px 20px 0px #f500ff;
+}
+.titleImage:hover .overlay {
+    opacity: 1;
+}
 
+/* Misc software icons */
+.Software {
+    width: 30px;
+    padding-right: 10px;
+}
+.softwareIcons {
+    position: absolute;
+    top: -30px;
+}
 
+/* Hide bullets for resume-box li if desired */
+.resume-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+.resume-box li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+}
 
+/* Responsive row/elem display */
+.show {
+    display: block;
+}
+.filterDiv {
+    display: none;
+}
 
+#myBtnContainer {
+    padding-bottom: 8%;
+}
+
+/* Legacy animations/section transitions (you can remove if not used) */
+#Introduction.dim {
+    -webkit-animation: fadeout 0.6s linear 1 normal forwards;
+}
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+#Introduction.undim {
+    -webkit-animation: fadein 0.4s linear 1 normal forwards;
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+#Container.lax {
+    -webkit-animation: translateY 0.4s linear 1 normal forwards;
+}
+#Container.unlax {
+    -webkit-animation: translateout 0.4s linear 1 normal forwards;
+}
+#Container.erase {
+    -webkit-animation: dissappear 0.4s linear 1 normal forwards;
+}
+#Introduction.lax {
+    -webkit-animation: translateY 0.9s linear 1 normal forwards;
+}
+#Introduction.unlax {
+    -webkit-animation: translateout 0.9s linear 1 normal forwards;
+}
+/*@-webkit-keyframes translateY {
+   from { transform: translateY(0); }
+   to { transform: translateY(-120px); }
+}*/
+@-webkit-keyframes dissappear {
+    from { transform: translateY(-80px); }
+    to { transform: translateY(-160vh); }
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
