@@ -1,7 +1,7 @@
 body {
     background-color: #1A1A1A;
     font-family: 'Roboto Slab', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 div {
@@ -555,4 +555,5 @@ h4 {
     height: 36px !important;
   }
 }
+
 
