@@ -305,7 +305,7 @@ body {
 
 .scroll-arrow {
     display: block;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1;
     margin: 0 auto 4px auto; /* space between arrow and text */
     opacity: 0.9;
@@ -317,6 +317,7 @@ body {
     50% { transform: translateY(6px); }
     100% { transform: translateY(0); }
 }
+
 
 
 
