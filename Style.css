@@ -1,7 +1,7 @@
 body {
     background-color: #1A1A1A;
     font-family: 'Roboto Slab', Arial, sans-serif;
-    font-size: 15px;
+    font-size: clamp(15px, 2.5vw, 18px);
 }
 
 div {
@@ -57,7 +57,7 @@ h4 {
     color: #F0F4F8;
 }
 .nametext, .occupationtext, .randomtext {
-    font-size: 20px;
+    font-size: clamp(20px, 8vw, 48px);
     color: #F0F4F8;
 }
 .occupation-child {
@@ -100,7 +100,7 @@ h4 {
 .resumeName {
     text-align: center;
     font-weight: 700;
-    font-size: 20px;
+    font-size: clamp(20px, 4vw, 24px);
     margin-bottom: 12px;
 }
 
@@ -123,14 +123,14 @@ h4 {
 .experience-categories strong {
     color: #66c2fd;
     font-weight: 500;
-    font-size: 15px;
+    font-size: clamp(15px, 2.5vw, 18px);
     display: block;
     margin-bottom: 5px;
 }
 .experience-categories ul {
     margin-top: 4px;
     margin-left: 24px;
-    font-size: 15px;
+    font-size: clamp(15px, 2.5vw, 18px);
     color: #F0F4F8;
     margin-bottom: 0;
     padding-left: 0;
@@ -142,7 +142,7 @@ h4 {
     line-height: 1.4;
 }
 .experience-categories span {
-    font-size: 16px;
+    font-size: clamp(16px, 3vw, 19px);
     font-weight: 500;
     display: block;
     margin-bottom: 2px;
@@ -150,7 +150,7 @@ h4 {
 
 /* ====== Footer Summary ====== */
 .footer-summary {
-    font-size: 14px;
+    font-size: clamp(14px, 2vw, 16px);
     background: none;
     box-shadow: none;
     border-radius: 0;
@@ -166,7 +166,7 @@ h4 {
     left: 50%;
     transform: translateX(-50%);
     bottom: 32px;
-    font-size: 12px;
+    font-size: clamp(12px, 2vw, 14px);
     color: #9aa0a6;
     opacity: 0.8;
     z-index: 1000;
@@ -251,7 +251,7 @@ h4 {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: clamp(15px, 2.5vw, 18px);
 }
 .active, .collapsible:hover {
     background-color: #1A1A1A;
@@ -399,7 +399,7 @@ h4 {
     width: 100%;
     border: none;
     text-align: left;
-    font-size: 17px;
+    font-size: clamp(17px, 3vw, 20px);
     margin-bottom: 6px;
     display: flex;
     align-items: center;
@@ -420,7 +420,7 @@ h4 {
 }
 .project-title {
     font-weight: bold;
-    font-size: 16px;
+    font-size: clamp(16px, 3vw, 19px);
     color: #F0F4F8;
 }
 .other-projects .content {
@@ -498,7 +498,6 @@ h4 {
 /* ========== MOBILE OVERRIDES ========== */
 @media screen and (max-width: 600px) {
     body, html {
-        font-size: 18px !important;
         min-width: 100vw !important;
         width: 100vw !important;
         padding: 0 !important;
@@ -506,7 +505,7 @@ h4 {
         overflow-x: hidden !important;
     }
     
-    /* IMPORTANT: These must override the desktop 20px font-size */
+    /* Use larger viewport width for responsive scaling on mobile */
     body .nametext,
     body .occupationtext,
     body .randomtext,
@@ -519,7 +518,7 @@ h4 {
     #Introduction .nametext,
     #Introduction .occupationtext,
     #Introduction .randomtext {
-        font-size: 48px !important;
+        font-size: 12vw !important;
         font-weight: 700 !important;
         line-height: 1.13 !important;
         color: #F0F4F8 !important;
@@ -532,40 +531,7 @@ h4 {
         font-size: inherit !important;
     }
     
-    /* Overall resume boxes and categories */
-    .resume-box,
-    .container,
-    .hero-summary,
-    .professional-summary,
-    .key-expertise,
-    .footer-summary,
-    .other-projects {
-        font-size: 22px !important;
-        line-height: 1.6 !important;
-    }
-    
-    .experience-categories,
-    .resume-box ul,
-    .resume-box li {
-        font-size: 22px !important;
-        line-height: 1.6 !important;
-    }
-    
-    h1, h2, h3, h4 {
-        font-size: 22px !important;
-        line-height: 1.6 !important;
-    }
-    
-    p, li {
-        font-size: 22px !important;
-        line-height: 1.6 !important;
-    }
-    
-    .project-title {
-        font-size: 22px !important;
-        line-height: 1.6 !important;
-    }
-    
+    /* Overall resume boxes and categories - now rely on clamp() from desktop */
     .resume-box,
     .container,
     .hero-summary,
@@ -604,12 +570,6 @@ h4 {
         flex-shrink: 0 !important;
         min-width: 0 !important;
         box-sizing: border-box !important;
-    }
-    
-    .other-projects .collapsible {
-        font-size: 22px !important;
-        padding: 14px !important;
-        gap: 9px !important;
     }
     
     .carousel-image {
