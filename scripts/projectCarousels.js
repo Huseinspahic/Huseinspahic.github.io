@@ -36,18 +36,3 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
     showImage(currentIdx);
   });
 });
-
-// Collapsible logic (if not already present)
-document.querySelectorAll(".collapsible").forEach(function(btn) {
-  btn.addEventListener("click", function() {
-    btn.classList.toggle("active");
-    var content = btn.nextElementSibling;
-    if (btn.classList.contains("active")) {
-      content.style.maxHeight = content.scrollHeight + "px";
-      content.style.padding = "14px 18px";
-    } else {
-      content.style.maxHeight = null;
-      content.style.padding = "0 18px";
-    }
-  });
-});
