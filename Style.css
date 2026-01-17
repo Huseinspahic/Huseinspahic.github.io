@@ -284,14 +284,16 @@ body {
 
 /* Scroll hint */
 .scroll-hint {
-    position: absolute;
+    position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 24px;
+    bottom: 32px;
     font-size: 12px;
     color: #9aa0a6;
     opacity: 0.8;
     animation: float 2s ease-in-out infinite;
+    z-index: 1000;
+    pointer-events: none;
 }
 
 @keyframes float {
@@ -299,6 +301,7 @@ body {
     50% { transform: translateY(6px); }
     100% { transform: translateY(0); }
 }
+
 
 
 
