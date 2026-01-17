@@ -94,10 +94,10 @@ body {
  #Introduction.unlax {
      -webkit-animation: translateout 0.9s linear 1 normal forwards;
 }
- @-webkit-keyframes translateY {
+ /*@-webkit-keyframes translateY {
     from { transform: translateY(0); }
     to { transform: translateY(-120px); }
-}
+}*/
 }
  @-webkit-keyframes dissappear {
      from {
@@ -317,6 +317,7 @@ body {
     50% { transform: translateY(6px); }
     100% { transform: translateY(0); }
 }
+
 
 
 
