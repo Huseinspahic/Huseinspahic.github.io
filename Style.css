@@ -6,7 +6,6 @@ body {
 }
 .introduction {
     text-align: center;
-    padding-top: 0;
     position: relative;
 }
  h2, h1 {
@@ -38,8 +37,11 @@ body {
      font-size: 20px;
      color: #F0F4F8;
 }
- .thisSection {
-     height: 100vh;
+.thisSection {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
  #Introduction.dim {
      -webkit-animation: fadeout 0.6s linear 1 normal forwards;
@@ -282,7 +284,10 @@ body {
 
 /* Scroll hint */
 .scroll-hint {
-    margin-top: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 24px;
     font-size: 12px;
     color: #9aa0a6;
     opacity: 0.8;
@@ -294,6 +299,7 @@ body {
     50% { transform: translateY(6px); }
     100% { transform: translateY(0); }
 }
+
 
 
 
