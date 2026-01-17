@@ -8,8 +8,6 @@ body {
     text-align: center;
     padding-top: 0;
     position: relative;
-    top: 40vh;
-    transform: translateY(-50%);
 }
  h2, h1 {
      font-size: 25px;
@@ -296,5 +294,6 @@ body {
     50% { transform: translateY(6px); }
     100% { transform: translateY(0); }
 }
+
 
 
