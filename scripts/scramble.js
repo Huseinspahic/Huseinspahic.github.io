@@ -109,5 +109,4 @@ setTimeout(() => {
 
 setTimeout(() => {
     intro.classList.add('lax', 'dim')
-    container.classList.add('lax')
 }, 5500)
