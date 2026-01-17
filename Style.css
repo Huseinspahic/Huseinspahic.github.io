@@ -53,7 +53,7 @@ h4 {
     font-weight: 700;
 }
 .nametext, .occupationtext, .randomtext {
-    font-size: 32px;
+    font-size: 20px;
     color: #F0F4F8;
 }
 .occupation-child {
@@ -555,3 +555,4 @@ h4 {
     height: 36px !important;
   }
 }
+
