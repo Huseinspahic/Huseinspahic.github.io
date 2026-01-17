@@ -94,47 +94,28 @@
     </li>
   </ul>
 </section>
-    <section class="other-projects resume-box">
+<section class="resume-box other-projects">
   <h2>Other Projects & Initiatives</h2>
-  
+
   <!-- ZBGA Project -->
-  <div class="project">
-    <button class="collapsible">
-      <img src="images/ZBGA.jpg" alt="ZBGA Project" class="project-thumb">
-      <span class="project-title">ZBGA <small style="font-size:12px;font-weight:normal;color:#9aa0a6;">zbga.org</small></span>
-    </button>
-    <div class="content">
-      <p><b>Website for Non-Profit Organization</b> —
-        As a board member, I built zbga.org to keep our community updated on events and announcements. I implemented a custom Stripe integration, both on the website and in-house (using a Ruby backend), to process donations and memberships. The new Stripe card reader replaced a legacy bank solution that charged over 8% fees; now, we only pay 2% + $0.30 per transaction, saving the organization significant money and improving the donor experience.
-      </p>
-      <ul>
-        <li><b>Role:</b> Board Member, Lead Developer</li>
-        <li><b>Tech Stack:</b> Ruby (backend), JavaScript, Stripe API, Web, Card Reader integration</li>
-        <li><b>Impact:</b> Streamlined payments for donations/memberships with dramatically reduced fees</li>
-      </ul>
-      <a href="https://zbga.org" target="_blank" rel="noopener" style="color:#66c2fd;">Visit zbga.org</a>
+  <button class="collapsible" type="button" style="display: flex; align-items: center; gap: 16px;">
+    <img src="images/ZBGA/thumbnail_Logo-ZBGA.png" alt="ZBGA Logo" style="width:44px; height:44px; object-fit:cover; border-radius:6px; box-shadow:1px 1px 5px rgb(0,0,0,0.25);">
+    <span style="font-weight: bold; font-size:16px;">ZBGA <small style="font-size:12px; font-weight:normal; color:#9aa0a6;">zbga.org</small></span>
+  </button>
+  <div class="content">
+    <!-- Carousel for ZBGA images -->
+    <div class="carousel" data-project="ZBGA">
+      <img class="carousel-image" src="images/ZBGA/thumbnail_Logo-ZBGA.png" alt="ZBGA Logo">
+      <button class="carousel-control left" type="button" aria-label="Previous Image">&lt;</button>
+      <button class="carousel-control right" type="button" aria-label="Next Image">&gt;</button>
     </div>
-  </div>
-  
-  <!-- Bosnian Pine Project -->
-  <div class="project">
-    <button class="collapsible">
-      <img src="images/BosnianPine.jpg" alt="Bosnian Pine Project" class="project-thumb">
-      <span class="project-title">Bosnian Pine <small style="font-size:12px;font-weight:normal;color:#9aa0a6;">bosnianpine.com</small></span>
-    </button>
-    <div class="content">
-      <p><b>Woodcraft E-Commerce Website</b> —
-        I designed and launched Bosnian Pine (bosnianpine.com) as a personal business, advertising online and selling custom wooden country cutouts to buyers. The site features a full working e-commerce platform hosted on Bluehost, allowing customers to browse products and place orders securely.
-      </p>
-      <ul>
-        <li><b>Role:</b> Founder, Web Designer, E-Commerce Operator</li>
-        <li><b>Tech Stack:</b> PHP/WordPress, WooCommerce, Stripe Integration, Shared Hosting (Bluehost)</li>
-        <li><b>Impact:</b> Enabled custom woodcraft sales and online presence, attracting customers nationwide</li>
-      </ul>
-      <a href="https://bosnianpine.com" target="_blank" rel="noopener" style="color:#66c2fd;">Visit bosnianpine.com</a>
-    </div>
-  </div>
-</section>
+    <p>
+      <b>Website for Non-Profit Organization</b> — As a board member, I built zbga.org to keep our community updated on events and announcements. I implemented a custom Stripe integration both on the website and in-house (Ruby backend) for donations and memberships. The new Stripe card reader replaced a costly bank solution, dropping transaction fees from over 8% to just 2% + $0.30, saving substantial funds and streamlining payments.
+    </p>
+    <ul>
+      <li><b>Role:</b> Board Member, Lead Developer</li>
+      <li><b>Tech Stack:</b
+
 
 <!-- Ultra-Short Footer Version -->
 <footer class="footer-summary resume-box unlax" style="text-align:center;margin-top:12px;">
@@ -145,9 +126,11 @@
 <script src="scripts/scramble.js"></script>
 <script src="scripts/hidescroll.js"></script>
 <script src="scripts/collapsible.js"></script>
+<script src="scripts/projectCarousels.js"></script>
 
 </body>
 </html>
+
 
 
 
