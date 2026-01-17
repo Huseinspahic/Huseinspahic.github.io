@@ -232,6 +232,9 @@ body {
      overflow: hidden;
      transition: max-height 0.2s ease-out;
 }
+.resume-box, .resumeName, .experience-categories, .professional-summary, .hero-summary, .key-expertise, .footer-summary {
+    font-family: 'Roboto', 'Roboto Slab', Arial, sans-serif !important;
+}
  .resume-box {
      background: linear-gradient(to bottom, #121212, #1A1A1A);
      /*padding: 30px;*/
@@ -336,6 +339,7 @@ body {
     50% { transform: translateY(6px); }
     100% { transform: translateY(0); }
 }
+
 
 
 
