@@ -60,6 +60,19 @@ h4 {
     font-size: clamp(20px, 8vw, 48px);
     color: #F0F4F8;
 }
+
+/* Ensure scrambled text spans inherit parent font size */
+.nametext span,
+.occupationtext span,
+.randomtext span,
+.nametext .dud,
+.occupationtext .dud,
+.randomtext .dud {
+    font-size: inherit !important;
+    font-weight: inherit;
+    color: inherit;
+}
+
 .occupation-child {
     display: inline-block;
 }
