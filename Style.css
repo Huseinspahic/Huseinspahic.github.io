@@ -515,11 +515,21 @@ h4 {
     .introduction .randomtext,
     div.nametext,
     div.occupationtext,
-    div.randomtext {
+    div.randomtext,
+    #Introduction .nametext,
+    #Introduction .occupationtext,
+    #Introduction .randomtext {
         font-size: 48px !important;
         font-weight: 700 !important;
         line-height: 1.13 !important;
         color: #F0F4F8 !important;
+    }
+    
+    /* Also target the nested spans if any */
+    .nametext *,
+    .occupationtext *,
+    .randomtext * {
+        font-size: inherit !important;
     }
     
     /* Overall resume boxes and categories */
