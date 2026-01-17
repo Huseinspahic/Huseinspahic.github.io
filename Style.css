@@ -96,7 +96,7 @@ h4 {
 .resumeName {
     text-align: center;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 20px;
     margin-bottom: 12px;
 }
 
@@ -555,5 +555,6 @@ h4 {
     height: 36px !important;
   }
 }
+
 
 
