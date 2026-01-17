@@ -444,14 +444,29 @@ h4 {
   align-items: center;
   justify-content: center;
 }
+
+.carousel-frame {
+  width: 320px;
+  height: 220px;
+  background: #1A1A1A;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px rgb(0,0,0,0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* ensures carousel stays at fixed size even as image changes */
+}
+
 .carousel-image {
   width: 100%;
-  max-width: 320px;
-  height: auto;
-  display: block;
+  height: 100%;
+  object-fit: cover;
   border-radius: 8px;
-  box-shadow: 1px 1px 12px rgb(0 0 0 / 14%);
+  display: block;
+  transition: opacity 0.25s;
 }
+
 .carousel-control {
   position: absolute;
   top: 50%;
@@ -555,6 +570,7 @@ h4 {
     height: 36px !important;
   }
 }
+
 
 
 
