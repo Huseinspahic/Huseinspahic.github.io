@@ -1,8 +1,11 @@
 body {
     background-color: #1A1A1A;
+    font-family: 'Roboto Slab', Arial, sans-serif;
+    font-size: 18px;
 }
+
 div {
-    font-family: 'Roboto Slab'; /* global fallback, overridden below for resume sections */
+    font-family: 'Roboto Slab';
 }
 
 /* ====== Center Introduction Content with Flexbox ====== */
@@ -16,7 +19,6 @@ div {
 .introduction {
     text-align: center;
     position: relative;
-    /* Remove top/transform for static centering */
 }
 
 /* ====== Headings ====== */
@@ -51,7 +53,7 @@ h4 {
     font-weight: 700;
 }
 .nametext, .occupationtext, .randomtext {
-    font-size: 20px;
+    font-size: 32px;
     color: #F0F4F8;
 }
 .occupation-child {
@@ -88,6 +90,7 @@ h4 {
     margin: 12px auto;
     text-align: left;
     line-height: 1.6;
+    padding: 24px 30px;
 }
 
 .resumeName {
@@ -102,7 +105,7 @@ h4 {
     border-bottom: 2px solid #3A3F5C;
     padding-bottom: 5px;
 }
-.resume-box h1, p, li, h3 {
+.resume-box h1, p, li, h3, h2, h4 {
     color: #F0F4F8;
 }
 
@@ -126,18 +129,15 @@ h4 {
 .experience-categories ul {
     margin-top: 4px;
     margin-left: 24px;
-    font-size: 14px;
+    font-size: 15px;
     color: #F0F4F8;
-    /* Reduce space above/below */
     margin-bottom: 0;
     padding-left: 0;
 }
-
 .experience-categories ul li {
-    /* Reduce gap between key expertise bullets */
     padding: 3px 0;
-    margin: 0;         /* Remove vertical margin */
-    border-radius: 0;  /* If you want to keep it crisp */
+    margin: 0;
+    border-radius: 0;
     line-height: 1.4;
 }
 .experience-categories span {
@@ -193,7 +193,6 @@ h4 {
     100% { transform: translateY(0); }
 }
 
-/* ====== Miscellaneous/Legacy Styles (unchanged, but cleaned) ====== */
 .thumbnail {
     width: 100%;
 }
@@ -280,7 +279,6 @@ h4 {
     25%, 75% { opacity: 0; }
 }
 
-/* Overlays and Thumbnails for images, etc. */
 .thmbnl-image {
     position: relative;
     width: 100%;
@@ -311,7 +309,6 @@ h4 {
     opacity: 1;
 }
 
-/* Misc software icons */
 .Software {
     width: 30px;
     padding-right: 10px;
@@ -321,7 +318,6 @@ h4 {
     top: -30px;
 }
 
-/* Hide bullets for resume-box li if desired */
 .resume-box ul {
     list-style-type: none;
     padding: 0;
@@ -332,7 +328,6 @@ h4 {
     border-radius: 6px;
 }
 
-/* Responsive row/elem display */
 .show {
     display: block;
 }
@@ -344,7 +339,7 @@ h4 {
     padding-bottom: 8%;
 }
 
-/* Legacy animations/section transitions (you can remove if not used) */
+/* Legacy animations/section transitions */
 #Introduction.dim {
     -webkit-animation: fadeout 0.6s linear 1 normal forwards;
 }
@@ -480,16 +475,36 @@ h4 {
   color: #23272a;
 }
 
-/* ===============================
-   Mobile-Friendly Large Text Fix
-   =============================== */
+/* ========== MOBILE OVERRIDES ========== */
 @media screen and (max-width: 600px) {
   body, html {
+    font-size: 18px !important;
     min-width: 100vw !important;
     width: 100vw !important;
     padding: 0 !important;
     margin: 0 !important;
     overflow-x: hidden !important;
+  }
+  /* BIG intro name and occupation text */
+  .nametext, .occupationtext, .randomtext {
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    line-height: 1.13 !important;
+  }
+  /* Overall resume boxes and categories */
+  .resume-box,
+  .container,
+  .hero-summary,
+  .professional-summary,
+  .key-expertise,
+  .footer-summary,
+  .other-projects,
+  .experience-categories,
+  .resume-box ul,
+  .resume-box li,
+  h1, h2, h3, h4, p, li, .project-title {
+    font-size: 22px !important;
+    line-height: 1.6 !important;
   }
   .resume-box,
   .container,
@@ -504,6 +519,7 @@ h4 {
     box-sizing: border-box !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+    padding: 10px 2vw !important;
   }
   .thisSection {
     flex-direction: column !important;
@@ -526,15 +542,16 @@ h4 {
     min-width: 0 !important;
     box-sizing: border-box !important;
   }
-  .nametext, .occupationtext, .randomtext {
-    font-size: 48px !important;
-    font-weight: 700 !important;
-    line-height: 1.13 !important;
-  }
-  .resume-box,
-  .experience-categories,
-  h1, h2, h3, h4, p, li, .project-title {
+  .other-projects .collapsible {
     font-size: 22px !important;
-    line-height: 1.6 !important;
+    padding: 14px !important;
+    gap: 9px !important;
+  }
+  .carousel-image {
+    max-width: 98vw !important;
+  }
+  .project-thumb {
+    width: 36px !important;
+    height: 36px !important;
   }
 }
