@@ -20,8 +20,12 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
   const rightBtn = carousel.querySelector(".carousel-control.right");
 
   function showImage(idx) {
-    img.src = images[idx];
-    img.alt = images[idx].split('/').pop();
+    img.style.opacity = 0.6;
+    setTimeout(() => {
+      img.src = images[idx];
+      img.alt = images[idx].split('/').pop();
+      img.style.opacity = 1;
+    }, 60);
   }
   showImage(currentIdx);
 
