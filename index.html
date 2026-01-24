@@ -79,6 +79,7 @@ backToTop.onclick = function() {
     <div class="hero-architect-icon" aria-hidden="true"></div>
     <div>
       <h1 class="resumeName">Ahmed Huseinspahić</h1>
+    
       <h2 class="architect-title">ServiceNow Technical Architect</h2>
       <p class="architect-summary">
         <span class="architect-badge">Enterprise Platforms</span>
@@ -301,43 +302,60 @@ document.addEventListener('DOMContentLoaded', function() {
       <a href="https://bosnianpine.com" target="_blank" rel="noopener" class="project-link">Visit bosnianpine.com</a>
   </div>
 
-<!-- React Web Game Project -->
-  <button class="collapsible" type="button" style="display: flex; align-items: center; gap: 16px;">
-    <svg viewBox="0 0 44 44" width="44" height="44" style="border-radius:6px; box-shadow:1px 1px 5px rgb(0,0,0,0.25);background:#20252c;" xmlns="http://www.w3.org/2000/svg"><circle cx="22" cy="22" r="20" fill="#61dafb"/><text x="50%" y="54%" text-anchor="middle" fill="#191c1e" font-size="18" font-family="Arial" dy=".3em">🎮</text></svg>
-    <span style="font-weight: bold; font-size:16px;">React Web Game <small style="font-size:12px; font-weight:normal; color:#9aa0a6;">Playable Demo</small></span>
-  </button>
-  <div class="content">
+<!-- Games Section: Super Retro Arcade Style -->
+</section>
+<section id="Games" class="games-arcade resume-box">
+  <h2 style="font-family: 'Press Start 2P', monospace; color: #ff006e; text-shadow: 2px 2px 0 #222, 0 0 8px #ffde00; font-size:2.2em; margin-bottom:18px; letter-spacing:2px; text-align:center;">
+    <span style="font-size:1.2em;">🕹️</span> Games Arcade
+  </h2>
+  <div class="arcade-frame" style="background: repeating-linear-gradient(135deg, #222 0px, #222 8px, #2a2a2a 8px, #2a2a2a 16px); border: 6px solid #ffde00; border-radius: 18px; box-shadow: 0 0 32px #ff006e, 0 0 8px #222; padding: 24px 12px 32px 12px; max-width: 700px; margin: 0 auto 32px auto;">
+    <div style="text-align:center; margin-bottom:18px;">
+      <span style="font-family: 'Press Start 2P', monospace; color: #00f0ff; font-size:1.1em; text-shadow: 1px 1px 0 #222, 0 0 6px #00f0ff;">Play My React Web Game</span>
+    </div>
     <iframe 
       src="game/public/index.html" 
       title="React Video Game" 
-      style="width: 100%; min-width: 180px; max-width: 100%; height:600px; border:0; border-radius:12px; background:#151b21;"
+      style="width: 100%; min-width: 180px; max-width: 100%; height:600px; border:0; border-radius:12px; background:#151b21; box-shadow: 0 0 24px #00f0ff, 0 0 8px #222; display:block; margin:0 auto 18px auto;"
       allowfullscreen
       loading="lazy">
     </iframe>
-    <div class="project-badges">
-      <span class="project-badge">Web Game</span>
-      <span class="project-badge">PWA</span>
-      <span class="project-badge">Touch Optimized</span>
-      <span class="project-badge">Designer</span>
-      <span class="project-badge">Developer</span>
+    <div style="text-align:center; margin-top:12px;">
+      <a href="game/public/index.html" target="_blank" rel="noopener" style="font-family: 'Press Start 2P', monospace; color: #ffde00; background: #222; padding: 8px 18px; border-radius: 8px; text-decoration: none; box-shadow: 0 0 8px #ff006e; font-size:1em;">Play Fullscreen</a>
     </div>
-    <div class="project-stack">
-      <span class="stack-chip">React</span>
-      <span class="stack-chip">JavaScript (ES6+)</span>
-      <span class="stack-chip">HTML5 Canvas</span>
-      <span class="stack-chip">SVG</span>
-      <span class="stack-chip">CSS Modules</span>
+    <div style="margin-top:18px; text-align:center;">
+      <span style="font-family: 'Press Start 2P', monospace; color: #ff006e; font-size:0.9em;">Insert Coin to Start!</span>
     </div>
-    <p class="project-description">
-      Developed a fully responsive web app video game using React, deployed as a progressive web application (PWA) for iOS. The game is touch optimized and leverages modern React hooks for state management and animation.
-    </p>
-    <ul class="project-impact">
-      <li>Built a native-feeling, installable game experience for iOS</li>
-      <li>Easily maintainable and portable to Android or desktop browsers</li>
-      <li>Demonstrates modern React and game development skills</li>
-    </ul>
-    <a href="game/public/index.html" target="_blank" rel="noopener" class="project-link">Launch in new tab</a>
   </div>
+  <div class="arcade-info" style="text-align:center;">
+    <span style="font-family: 'Press Start 2P', monospace; color: #00f0ff; font-size:1em;">Built with React, JavaScript, and retro pixel love.</span>
+    <div class="arcade-details" style="margin-top:28px; text-align:left; max-width:600px; margin-left:auto; margin-right:auto; background:#191c1e; border-radius:12px; box-shadow:0 0 12px #222; padding:18px; color:#F0F4F8; font-family:'Roboto',sans-serif;">
+      <h3 style="font-family:'Press Start 2P',monospace; color:#ffde00; font-size:1.1em; margin-bottom:10px;">Project Description</h3>
+      <p>Developed a fully responsive web app video game using React, deployed as a progressive web application (PWA) for iOS. The game is touch optimized and leverages modern React hooks for state management and animation.</p>
+      <h3 style="font-family:'Press Start 2P',monospace; color:#ffde00; font-size:1.1em; margin-bottom:10px; margin-top:18px;">Project Impact</h3>
+      <ul style="margin-left:18px;">
+        <li>Built a native-feeling, installable game experience for iOS.</li>
+        <li>Easily maintainable and portable to Android or desktop browsers.</li>
+        <li>Demonstrates modern React and game development skills.</li>
+      </ul>
+      <h3 style="font-family:'Press Start 2P',monospace; color:#ffde00; font-size:1.1em; margin-bottom:10px; margin-top:18px;">Project Stack</h3>
+      <div style="margin-bottom:10px;">
+        <span style="display:inline-block; background:#222; color:#00f0ff; border-radius:6px; padding:4px 10px; margin-right:8px; font-size:0.95em;">React</span>
+        <span style="display:inline-block; background:#222; color:#00f0ff; border-radius:6px; padding:4px 10px; margin-right:8px; font-size:0.95em;">JavaScript (ES6+)</span>
+        <span style="display:inline-block; background:#222; color:#00f0ff; border-radius:6px; padding:4px 10px; margin-right:8px; font-size:0.95em;">HTML5 Canvas</span>
+        <span style="display:inline-block; background:#222; color:#00f0ff; border-radius:6px; padding:4px 10px; margin-right:8px; font-size:0.95em;">SVG</span>
+        <span style="display:inline-block; background:#222; color:#00f0ff; border-radius:6px; padding:4px 10px; margin-right:8px; font-size:0.95em;">CSS Modules</span>
+      </div>
+      <h3 style="font-family:'Press Start 2P',monospace; color:#ffde00; font-size:1.1em; margin-bottom:10px; margin-top:18px;">Project Badges</h3>
+      <div style="margin-bottom:10px;">
+        <span style="display:inline-block; background:#ff006e; color:#fff; border-radius:6px; padding:4px 10px; margin-right:8px; font-size:0.95em;">Web Game</span>
+        <span style="display:inline-block; background:#ffde00; color:#222; border-radius:6px; padding:4px 10px; margin-right:8px; font-size:0.95em;">PWA</span>
+        <span style="display:inline-block; background:#00f0ff; color:#222; border-radius:6px; padding:4px 10px; margin-right:8px; font-size:0.95em;">Touch Optimized</span>
+        <span style="display:inline-block; background:#222; color:#ffde00; border-radius:6px; padding:4px 10px; margin-right:8px; font-size:0.95em;">Designer</span>
+        <span style="display:inline-block; background:#222; color:#ffde00; border-radius:6px; padding:4px 10px; margin-right:8px; font-size:0.95em;">Developer</span>
+      </div>
+    </div>
+  </div>
+</section>
 </section>
 
 <!-- Ultra-Short Footer Version -->

@@ -1,3 +1,54 @@
+/* ====== Retro Arcade Games Section ====== */
+.games-arcade {
+    background: linear-gradient(135deg, #191c1e 80%, #ffde00 100%);
+    box-shadow: 0 0 32px #ff006e, 0 0 8px #222;
+    border-radius: 18px;
+    margin: 32px auto;
+    padding: 18px 0 32px 0;
+    max-width: 800px;
+    position: relative;
+}
+.games-arcade h2 {
+    font-family: 'Press Start 2P', monospace;
+    color: #ff006e;
+    text-shadow: 2px 2px 0 #222, 0 0 8px #ffde00;
+    font-size: 2.2em;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.arcade-frame {
+    background: repeating-linear-gradient(135deg, #222 0px, #222 8px, #2a2a2a 8px, #2a2a2a 16px);
+    border: 6px solid #ffde00;
+    border-radius: 18px;
+    box-shadow: 0 0 32px #ff006e, 0 0 8px #222;
+    padding: 24px 12px 32px 12px;
+    max-width: 700px;
+    margin: 0 auto 32px auto;
+}
+.arcade-info {
+    text-align: center;
+    margin-top: 12px;
+    font-family: 'Press Start 2P', monospace;
+    color: #00f0ff;
+    font-size: 1em;
+}
+.games-arcade a {
+    font-family: 'Press Start 2P', monospace;
+    color: #ffde00;
+    background: #222;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 0 8px #ff006e;
+    font-size: 1em;
+    transition: background 0.2s, color 0.2s;
+}
+.games-arcade a:hover {
+    background: #ff006e;
+    color: #fff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 /* ====== Subtle SVG Background Pattern ====== */
 .background-pattern {
     position: fixed;
